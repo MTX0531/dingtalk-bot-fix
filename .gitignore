@@ -34,7 +34,8 @@ htmlcov/
 *.swp
 
 # ---- 数据库与运行时数据（含群配置、导出、归档图片，严禁提交） ----
-data/
+data/*
+!data/groups.example.json
 logs/
 archives/
 dingtalk.db

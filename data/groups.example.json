@@ -1,0 +1,36 @@
+{
+  "groups": [
+    {
+      "group_id": "cid_demo_group_a",
+      "store_name": "测试群（示例）",
+      "manager_ids": ["900000000000000001", "900000000000000002"],
+      "engineer_ids": ["900000000000000011", "900000000000000012"],
+      "other_member_ids": ["900000000000000021"],
+      "engineering_leader_id": "900000000000000031",
+      "regional_manager_id": "900000000000000041",
+      "is_active": true
+    },
+    {
+      "group_id": "cid_demo_group_b",
+      "store_name": "上海商场02店",
+      "manager_ids": ["900000000000000003"],
+      "engineer_ids": ["900000000000000013"],
+      "other_member_ids": [],
+      "engineering_leader_id": "900000000000000031",
+      "regional_manager_id": "900000000000000042",
+      "is_active": true
+    }
+  ],
+  "user_id_map": {
+    "oid_manager_a": "900000000000000001",
+    "oid_manager_b": "900000000000000002",
+    "oid_manager_c": "900000000000000003",
+    "oid_engineer_a": "900000000000000011",
+    "oid_engineer_b": "900000000000000012",
+    "oid_engineer_c": "900000000000000013",
+    "oid_other_a": "900000000000000021",
+    "oid_leader_a": "900000000000000031",
+    "oid_region_a": "900000000000000041",
+    "oid_region_b": "900000000000000042"
+  }
+}
