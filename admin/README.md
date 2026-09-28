@@ -53,7 +53,7 @@ ADMIN_PASSWORD=临时密码 python3 dingtalk_script/admin/server.py --port 8899
   - 新增行（自增主键自动跳过）
   - 删除行、导出 CSV
 - **SQL 控制台**: 任意 SQL，写操作自动备份 `data/tickets.db.bak_admin_*`
-- **一键备份**: 顶部"备份数据库"
+- **一键备份**: 顶部“备份数据库”
 
 ## 表分组
 

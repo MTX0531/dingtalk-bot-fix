@@ -567,7 +567,7 @@ if HAS_FASTAPI:
                 db.clear_ticket_sla_dedupe(ticket_id)
             elif status == "COMPLETED":
                 db._conn.execute(
-                    "UPDATE tickets SET status='COMPLETED', closed_at= ?,"
+                    "UPDATE tickets SET status='COMPLETED', closed_at=?,"
                     " completed_confirm_by='admin-manual', completed_confirm_at=?,"
                     " version=version+1 WHERE id=?",
                     (now, now, ticket_id),

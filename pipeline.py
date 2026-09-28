@@ -1,6 +1,6 @@
 """消息处理管道（计划书 §7、Task 11）。
 
-编排：Inbox → 待确认回复识别 → 云端模型语义识别（全 AI，关键词快路径已永久停用）→
+编排：Inbox → 待确认回复识别 → 云端模型语义识别（全 AI，关键词快路径已永久停用） →
 语义决策审计 → 候选快照 → 路由（编号>引用>上下文>语义>单候选）→ 校验 →
 待确认/执行 → Outbox。
 
@@ -98,7 +98,7 @@ _NUMBER_TOLERANT_INTENTS = frozenset({
 _CONFIRM_COMPLETE_INTENTS = frozenset({"ticket.confirm_complete", "ticket.reject_complete"})
 
 # ── 路由候选的「在途非活动」状态（2026-09-14）──
-# 事故：北京商场14大悦城品牌B店唯一工单为待商榷（PENDING_NEGOTIATION，
+# 事故：北京商场14示例广场品牌B店唯一工单为待商榷（PENDING_NEGOTIATION，
 # 2026-08-28 起不算活动工单），工程师群里发「001已完成」→ 候选=0 →
 # route=CLARIFY → 误回「当前没有可操作的活动工单，请先创建工单。」
 # 而协议 ticket.complete/cancel/stop 的 allowed_ticket_states 早已含
